@@ -224,7 +224,7 @@ if (CRAB_USE_ELINA)
 if (GIT_FOUND)
   set (ELINA_TAG "master" CACHE STRING "elina tag to use")
   ExternalProject_Add(elina
-    GIT_REPOSITORY https://github.com/eth-sri/ELINA.git
+    GIT_REPOSITORY https://github.com/numairmansur/ELINA
     GIT_TAG ${ELINA_TAG}
     INSTALL_DIR ${CMAKE_BINARY_DIR}/run/elina
     CONFIGURE_COMMAND ./configure -prefix ${INSTALL_DIR} -use-vector  -gmp-prefix ${GMP_SEARCH_PATH} -mpfr-prefix ${MPFR_SEARCH_PATH} 
